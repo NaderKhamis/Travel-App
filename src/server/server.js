@@ -116,4 +116,7 @@ function listening() {
 };
 
 // EXPORTS APP 
-exports.app = app;
+module.exports = {
+    app,
+    server
+};
