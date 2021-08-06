@@ -1,0 +1,26 @@
+header {
+    #logo {
+        div {
+            background-image: url(../media/travellericon.png);
+            background-size: cover;
+            background-position: center center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    h1 {
+        font-family: 'Palette Mosaic', cursive !important;
+        color: #D2703F;
+    }
+    i {
+        color: #1B1F23;
+        &:hover {
+            color: #D2703F;
+        }
+    }
+}

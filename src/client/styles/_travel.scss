@@ -1,0 +1,27 @@
+main {
+    background-image: url(../media/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    section {
+        div.book-trip {
+            background-color: rgba($color: #FFF, $alpha: 0.6);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+        div.intro {
+            color: #FFF;
+            font-size: 24px;
+        }
+        div#result {
+            background-color: rgba($color: #FFF, $alpha: 0.6);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+footer {
+    div.container {
+        div {
+            a:not(:last-of-type) {
+                i {
+                    margin-right: 20px;
+                }
+            }
+            & i {
+                color: #1B1F23;
+                &:hover {
+                    color: #D2703F;
+                }
+            }
+        }
+    }
+}

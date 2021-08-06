@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="author" content="Nader Khamis">
+    <title>Traveller</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- TITLE-ICON -->
+    <link rel="icon" href="e791c310d96259abdbaa9350becf8025.png" sizes="16x16">
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/bedebcca58.js" crossorigin="anonymous"></script>
+    <!-- GOOGL-FONT -->
+    <!-- MAIN-FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- TITLE-FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- START-HEADER -->
+    <header class="p-3">
+        <div class="container">
+            <div class="row justify-content-center justify-content-md-between">
+                <div class=" row col-9 justify-content-center justify-content-md-start align-items-center">
+                    <div id="logo" class="p-0">
+                        <div></div>
+                    </div>
+                    <div class="pl-1">
+                        <a href="#" class="text-decoration-none">
+                            <h1>Traveller</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 d-flex justify-content-center justify-content-md-end align-items-center">
+                    <a class="text-decoration-none" href="https://github.com/NaderKhamis" target="_blank">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END-HEADER -->
+    <main id="app" class="d-flex justify-content-center align-items-center font-weight-bold p-5">
+        <section class="container row">
+            <div class="intro col-12 col-lg-4 order-lg-1 text-center text-md-left d-flex align-items-center">
+                <p>Get the best travel deals on Book My Trip with Your preferred travel partner.<br>We aggregate the best fares from our supplier to offer you the best.</p>
+            </div>
+            <div class="book-trip col-12 col-lg-8 order-lg-0 p-4">
+                <form>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input class="form-control" type="text" id="city" placeholder="please enter a valid location">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="start-date">Starting From</label>
+                            <input class="form-control" type="date" id="start-date">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="end-date">Ending From</label>
+                            <input class="form-control" type="date" id="end-date">
+                        </div>
+                    </div>
+                    <button id="create" type="button" class="btn btn-primary btn-block">Add Trip</button>
+                </form>
+            </div>
+            <div class="container col order-lg-2 mt-3 p-4" id="result">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="spinner"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div id="countdown"></div>
+                        <div id="countryInfo"></div>
+                        <div id="duration"></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div id="temperature"></div>
+                    </div>
+                </div>
+                <div id="photo" class="card"></div>
+            </div>
+        </section>
+    </main>
+    <!-- START-FOOTER -->
+    <footer class="p-5">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-6 p-0 d-flex justify-content-center justify-content-md-start ">
+                    <p class="font-weight-bold">
+                        All Copyrights Reserved 2021 <i class="fa fa-copyright"></i> Udacity-Traveller
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 p-0 d-flex justify-content-center justify-content-md-end">
+                    <a href="https://www.facebook.com/NaderKhamisFb">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/NaderKhamisTw">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/naderkhamisin/">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://www.behance.net/naderkhamisbe">
+                        <i class="fa fa-behance fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END-FOOTER -->
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(function(err) {
+                //registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        } else {
+            console.log('No service-worker on this browser');
+        }
+    </script>
+</body>
+
+</html>
